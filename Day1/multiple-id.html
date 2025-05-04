@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #heading {
+            color: rgb(59, 71, 128);
+            font-weight: bold;
+            font-size: 50px;
+            font-family: 'Courier New', Courier, monospace;
+        }    
+        
+    </style>
+</head>
+<body>
+    <p id="heading">Hello User</p>
+    <p id="heading">Welcome User</p>
+</body>
+</html>
+
+<script type="text/javascript">
+    pElement = document.getElementById("heading");
+    console.log(pElement); // This will return the first element with id "heading"
+
+    pElement.textContent = "Bye User"; // This will change the text of the first element with id "heading"
+    pElement.style.color = "purple"; 
+    pElement.style.fontSize = "40px"; 
+    pElement.style.fontFamily = "Arial";
+
+</script>
