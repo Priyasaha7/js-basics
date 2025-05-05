@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="heading" class="box">
+        <p class="box">Hello</p>
+        <p class="box">User</p>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    elements = document.getElementsByClassName("box");
+    console.log(elements); 
+
+    for(i = 0; i < elements.length; i++){
+        console.log(elements[i]);
+        elements[i].style.cssText = "color: red; background-color: black; font-size: 30px; font-family: Arial;";
+    }
+
+    Array.from(elements).forEach((value, index, arr) => {
+        console.log(value);
+        console.log(index);
+        console.log(arr);
+    });
+</script>

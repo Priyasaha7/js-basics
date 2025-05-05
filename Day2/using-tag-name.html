@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function changeEffects(){
+            liElements = document.getElementsByTagName("li");
+            [...liElements].forEach(function(value){
+                value.style.cssText = "color: goldenrod; margin: 10px ";
+            })
+        }
+    </script>
+</head>
+<body>
+    <h4>My Shopping List</h4>
+    <li>IPHONE</li>
+    <li>ONEPLUS</li>
+    <li>SAMSUNG</li>
+    <button onclick="changeEffects()">Highlight Text</button>
+</body>
+</html>
