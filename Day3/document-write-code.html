@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+            function addContent() {
+                document.write("<h3>Welcome to JavaScript</h3>\n");
+                document.write("<p>This is a paragraph added using document.write()</p>");
+
+                document.write('Welcome to JavaScript');
+                document.writeln('This is a paragraph added using document.write()');
+                document.write('This is a paragraph added using document.write()');
+
+                h1 = document.createElement("h1");
+                h1.textContent = "Hello World!";
+                document.body.appendChild(h1);
+            }   
+    </script>
+</head>
+<body>
+    <h1>Hello User</h1>
+
+    <button type="button" onclick="addContent()">ADD CONTENT</button>
+</body>
+</html>
